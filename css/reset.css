@@ -1,0 +1,269 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+text-decoration: none;
+vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+display: block;
+}
+body {
+line-height: 1;
+}
+ol, ul {
+list-style: none;
+}
+blockquote, q {
+quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: '';
+content: none;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+
+
+/*Стилизация скроллов*/
+::-webkit-scrollbar-button {
+background-image:url('');
+background-repeat:no-repeat;
+width:6px;
+height:0px
+}
+
+::-webkit-scrollbar-track {
+    background-color: inherit;
+}
+
+::-webkit-scrollbar-thumb {
+-webkit-border-radius: 5px;
+border-radius: 5px;
+background-color: rgb(26, 20, 48);
+box-shadow:0px 1px 1px #fff inset;
+background-image:url('https://yraaa.ru/_pu/24/59610063.png');
+background-position:center;
+background-repeat:no-repeat;
+}
+
+::-webkit-resizer{
+background-image:url('');
+background-repeat:no-repeat;
+width:7px;
+height:0px
+}
+
+::-webkit-scrollbar{
+width: 11px;
+}
+
+/*Стилизация button*/
+button{
+    cursor: pointer;
+
+    font-family: serif;
+    font-size: 1rem;
+    font-weight: 500;
+
+    padding: .5rem;
+    border-radius: .5rem;
+
+    background-color: #ccc;
+    text-align: center;
+}
+
+button:checked,
+button:focus{
+    outline: none;
+    border: 1px solid black;
+    background-color: #ddd;
+}
+
+button:hover{
+    background-color: #ddd;
+}
+
+
+/*Стилизация input*/
+input[type="text"]{
+    font-family: serif;
+    font-size: 1rem;
+    font-weight: 500;
+
+    padding: 1rem;
+    margin: .5rem 0;
+
+    border: 1px solid black;
+    border-radius: 1rem;
+}
+
+input[type="text"]:active,
+input[type="text"]:focus
+{
+    outline: none;
+}
+
+input[type="text"].success{
+    border: 2px solid green;
+}
+
+input[type="text"].error{
+    border: 2px solid red;
+}
+
+
+/*Стилизация input textarea*/
+textarea{
+    resize: none;
+
+    font-family: serif;
+    font-size: 1rem;
+    font-weight: 500;
+
+    padding: 1rem;
+    margin: .5rem 0;
+
+    border: 1px solid black;
+    border-radius: 1rem;
+}
+
+textarea:active,
+textarea:focus
+{
+    outline: none;
+}
+
+/*Стилизация ползунков*/
+input[type="range"]{
+    -webkit-appearance: none;
+    cursor: pointer;
+/*	width: 80%;*/
+    height: .2rem;
+    background: #ccc;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+
+input[type="range"]:hover {
+        opacity: 1;
+    }
+
+input[type="range"]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+
+        width: .8rem;
+        height: 1rem;
+        border-radius: 30%;
+        background: #202020;
+        cursor: pointer;
+    }
+
+input[type="range"]::-moz-range-thumb {
+        width: .8rem;
+        height: 1rem;
+        border-radius: 30%;
+        background: #202020;
+        cursor: pointer;
+    }
+
+/*Стилизация чекбоксов*/
+input[type="checkbox"]{
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+input[type="checkbox"]+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+}
+
+input[type="checkbox"]+label::before {
+    content: '';
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    border: 2px solid #ccc;
+    box-sizing: border-box;
+
+    border-radius: 30%;
+    margin-right: .3rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+    transition: .3s;
+}
+input[type="checkbox"]:checked+label::before {
+  border-color: #ccc;
+  background-color: #202020;
+}
+/* стили при наведении курсора на checkbox */
+input[type="checkbox"]:not(:disabled):not(:checked)+label:hover::before {
+    background-color: #aaa;
+}
+/* стили при наведении курсора на checkbox */
+input[type="checkbox"]:not(:disabled):checked+label:hover::before {
+    background-color: #555;
+}
+/* стили для активного состояния чекбокса (при нажатии на него) */
+input[type="checkbox"]:not(:disabled):active+label::before {
+  background-color: #b3d7ff;
+
+}
+/* стили для чекбокса, находящегося в фокусе */
+input[type="checkbox"]:focus+label::before {
+/*	background-color: #555;*/
+/*	border: 2px solid #ccc;*/
+
+}
+/* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+input[type="checkbox"]:focus:not(:checked)+label::before {
+/*	background-color: #aaa;*/
+    border: 3px solid #888;
+
+}
+/* стили для чекбокса, находящегося в состоянии disabled */
+input[type="checkbox"]:disabled+label::before {
+  background-color: #e9ecef;
+}
+
+.correct{
+    color: #4CBB17;
+    border-color: #4CBB17;
+}
+
+.incorrect{
+    color: #B00000;
+    border-color: #B00000;
+}

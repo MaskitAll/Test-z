@@ -1,0 +1,86 @@
+<link rel="stylesheet" type="text/css" href="../css/main.css">
+
+<div class = "test green">
+	<h2 style="margin-left: 40px">Задача 27. "Распродажа стайлеров"</h2>
+	Условие: Создайте html- и css- файлы, результат которых показан на рисунке.
+	<br>
+<img src="../../img/img_html_css/task-27.png" alt="task-27"><br>
+
+<h1 align="center">***</h1><br>
+<div class = "decision" style="margin-left: 20%; width: 80%;">
+	<div class="back">
+		<div class="border">
+			<div class="title">
+				Распродажа стайлеров
+				<div class="title1">
+					<img src="/img/img_html_css/clock.png" height="30" width="30" alt="clock">
+					Действует до <time datetime="06/12/2020">06 декабря</time>
+				</div>
+			</div>
+			<div class="title sales">Скидки до<br><span class="sales1">12%</span></div>
+		</div>
+	</div>
+	<br> 10/08/2020
+</div>
+	<a href="../content.html"><h3>&lt;&mdash; Назад</h3></a>
+</div>
+
+
+<style type="text/css">
+	.decision{
+
+	}
+
+	.back{
+		display: flex;
+
+		width: 800px;
+		height: 250px;
+
+		}
+
+	.border{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+
+		height: 30%;
+		width: 60%;
+	}
+
+	.title{
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		padding: 10px;
+
+		font-weight: bold;
+		font-family: sans-serif;
+		font-stretch: expanded;
+		font-size: 20;
+	}
+
+	img{
+		vertical-align: middle;
+	}
+	.title1{
+		margin-top: 20px;
+		color: red;
+		font-weight: bolder;
+	}
+
+	.sales{
+		height: 100%;
+
+		border-radius: 15px;
+		text-align: center;
+		padding: 15px;
+		border: 2px dashed red;
+	}
+
+	.sales1{
+		color: red;
+		font-weight: bolder;
+		font-size: 40;
+	}
+</style>

@@ -1,0 +1,99 @@
+<link rel="stylesheet" type="text/css" href="../css/main.css">
+
+<div class = "test green">
+	<h2 style="margin-left: 40px">Задача 40. "Отправить"</h2>
+	Условие: Создайте html- и css- файлы, результат которых показан на рисунке.
+	<br>
+<img src="../../img/img_html_css/task-40.png" alt="task-40"><br>
+
+<h1 align="center">***</h1><br>
+<div class = "decision">
+	<div class="back">
+		<button class="btn btn-white">Отправить</button>
+		<a class="btn btn-black" href="#">Отправить</a>
+
+
+	</div>
+</div>
+
+
+	<br> 13/10/2020
+	<a href="/index.html"><h3>&lt;&mdash; Назад</h3></a>
+</div>
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+	.decision{
+		margin: 10px 10%;
+	}
+
+	.back{
+
+	}
+
+	.btn{
+		position: relative;
+
+		font-family: serif;
+		font-size: 25;
+		text-decoration: none;
+
+		cursor: pointer;
+		padding: 10px;
+		margin: 0;
+
+
+		color: orange;
+
+	}
+
+	.btn::before{
+		content: "\205E";
+		margin-right: 4px;
+	}
+
+	.btn-white{
+		background-color: #dfdfdf;
+		border-radius: 8px;
+		border: none;
+	}
+
+	.btn-white.btn:before{
+		color: black;
+	}
+
+	.btn-black{
+		background-color: #6f6f6f;
+		border-radius: 8px;
+		border: none;
+	}
+
+	.btn-black::after{
+		content: '';
+		position: absolute;
+
+		right: -39px;
+		border: 24px solid transparent;
+		border-left: 20px solid #6f6f6f;
+	}
+
+	.btn-black.btn:before{
+		color: aliceblue;
+	}
+
+
+</style>
+
+
+<script type="text/javascript">
+	window.load = function() {
+    $('img').show();
+};
+</script>

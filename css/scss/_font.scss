@@ -1,0 +1,73 @@
+/*VARs*/
+$theme: light;
+
+$color_font: rgb(26, 20, 48);
+$color_font-dark: rgba(180, 180, 180, 0.8);
+$color_font-bee: rgb(0, 0, 0);
+
+$color_back: #fff;
+$color_back-dark: rgb(26, 20, 48);
+$color_back-bee: rgb(255, 255, 0);
+
+$color_with_love: #b00b69;
+
+/*MIXINs*/
+
+@mixin theme($theme: inherit){
+	&,a{
+		@if $theme == light{
+			background-color: $color_back;
+			color: $color_font;
+		}
+		@else if $theme == dark{
+			background-color: $color_back-dark;
+			color: $color_font-dark;
+		}
+		@else if $theme == bee {
+			background-color: $color_back-bee;
+			color: $color_font-bee;
+		}
+		@else if $theme == love {
+			background-color: $color_with_love;
+			color: #000;
+		}
+	}
+}
+
+
+@mixin hover($theme: inherit){
+	@if $theme == light{
+		background-color: darken($color_back, 10%);
+	}
+	@else if $theme == dark{
+		color: darken($color_font-dark, 10%);
+	}
+	@else if $theme == bee{
+		color: darken($color_back-bee, 10%);
+	}
+}
+
+
+@mixin text($size: 1.2rem, $theme: inherit){
+	font-family: sans-serif;
+	font-size: $size;
+	font-weight: 600;
+	line-height: 1.3;
+
+	@include theme($theme);
+}
+
+
+@mixin row{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+
+
+@mixin colomn($padding: 0){
+	display: flex;
+	flex-direction: column;
+
+	margin-bottom: $padding;
+}

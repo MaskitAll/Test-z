@@ -1,0 +1,20 @@
+<h1>Карта сокровищ</h1>
+<img src="/img/without_css/task-12.jpg" width="500" height="300" alt="golden map"
+usemap="#Navigation">
+<map id="Navigation" name="Navigation">
+	<area shape="rect" coords="200,200,300,300" class="area" title="boat" onclick="gett()">
+	<area shape="rect" coords="300,120,400,180" class="area" title="croc" onclick="gett()">
+	<area shape="rect" coords="320,50,400,100" class="area" title="bone" onclick="gett()">
+	<area shape="rect" coords="50,200,120,300" class="area" title="octo" onclick="gett()">
+	<area shape="rect" coords="120,80,180,150" class="area" title="mount" onclick="gett()">
+	<area shape="rect" coords="220,80,300,140" class="area" title="gold" onclick="gett()">
+</map>
+<br>Пройдено:
+<progress id="progressbar" value="0" max="6"></progress>
+<br> 20/07/2020
+
+<script>
+	function gett(){
+		document.getElementById("progressbar").value++;
+	}
+</script>

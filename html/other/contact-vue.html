@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/contact-vue.css">
+
+    <title>Contacts</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+</head>
+<body>
+<div id="contacts">
+
+<div class="contact-visible" v-if = "contactLocal && contactLocal.contactVisible === true">
+    <div class="black_fon" @click = "hideInfo()"></div>
+
+    <div class="container-info">
+        <div class="contact-info contact-item" v-for="(value, name) in contactLocal.data">
+            <span class="">{{name}} : {{value}}</span>
+            <div class="btn-container">
+                <button class="btn btn_info-toggle" @click.prevent = "toggleInfo(name)">/</button>
+                <button class="btn btn_info-delete" @click.prevent = "deleteInfo(name)">-</button>
+            </div>
+        </div>
+        <button @click.prevent = addInfo()>Add</button>
+    </div>
+</div>
+
+
+<div class="background">
+    <div class="contact-item contact-item-add">
+        <!-- <div class="contact-item">+</div> -->
+        <form action="" class="contact-add-form" name = "contactAddForm">
+            <input type="text" placeholder="name" name = "name">
+            <input type="text" placeholder="phone number" name = "num">
+            <button @click.prevent = "addContact()">Добавить</button>
+        </form>
+    </div>
+
+    
+    <div class="contacts-container">
+    <div v-for="contact in contactList">
+
+        <div style="position: relative;">
+            <div class="contact-item" @click = "showInfo(contact)">
+                <span class="contact-text">{{contact.data.name}}</span>
+                <span class="contact-text">{{contact.data.num}}</span>
+            </div>
+            <div class="btn-container">
+                <button class="btn btn_contact-delete" @click.prevent = "deleteContact(contact)">-</button>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</div>
+</div>
+</body>
+</html>
+
+<script src="/js/contact-vue.js"></script>

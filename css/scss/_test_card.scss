@@ -1,0 +1,75 @@
+.green{
+	background: linear-gradient(to top right, #00ff00 0%, #00ffff 100%);
+	color: rgba(14, 14, 14, 1);
+}
+
+.yellow{
+	background: linear-gradient(to top right, #ffff00 0%, #ccffcc 100%);
+	color: rgba(14, 14, 14, 1);
+}
+
+.red{
+	background: linear-gradient(to top right, #ff0000 0%, #ffcc99 100%);
+	color: rgba(14, 14, 14, 1);
+}
+
+
+
+
+.test{
+	position: absolute;
+	perspective: 3000px;
+	z-index: 10;
+
+	width: 100%;
+	left: 100%;
+	top: 0;
+
+	font-family: serif;
+	font-size: 1.4rem;
+
+	box-sizing: content-box;
+	user-select: none;
+	cursor: context-menu;
+}
+
+.test img{
+	max-width: 100%;
+}
+
+a, a:link, a:visited, a:active{
+	text-decoration: none;
+
+	color: rgba(14, 14, 14, 1);
+	font-family: serif;
+	font-size: 1.4rem;
+	font-weight: 600;
+}
+
+.card__side{
+	position: absolute;
+
+	width: 100%;
+	height: auto;
+	top: 0;
+	left: 0;
+	padding: 20px;
+
+	box-sizing: border-box;
+
+	backface-visibility: hidden;
+	box-shadow: 2px 0 6px rgba(14, 14, 14, .4);
+	border-radius: 20px;
+	border: 1px solid rgba(14, 14, 14, .2);
+
+	transition: 1s;
+
+}
+
+.front{
+
+}
+
+.decision{
+	transform: rotateY(180deg);
+}

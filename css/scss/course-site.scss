@@ -1,0 +1,188 @@
+$color_black: #0B141D;
+$color_yellow:  #F8D930;
+$color_gray: #B4B4B4;
+
+
+*{
+    box-sizing: border-box;
+    color: #0B141D;
+    font-size: 10px;
+}
+
+body{
+    min-width: 1100px;
+    overflow-x: hidden;
+}
+
+.comfortaa{
+    font-family: 'Comfortaa', cursive;
+}
+
+.text-tiny{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+}
+
+.text-medium{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    line-height: 38px;
+    font-weight: 400;
+}
+
+.yellow_btn{
+    font-size: 20px;
+    line-height: 25px;
+    border: none;
+    border-radius: 3px;
+
+    padding: 18px 70px;
+    background-color: $color_yellow;
+
+}
+
+#main-page{
+    width: 100%;
+    height: 100vh;
+    padding: 40px 30px;
+
+    font-family: 'Montserrat', sans-serif;
+
+    background: url("/img/main-fon.png") no-repeat;
+    background-size: cover;
+}
+
+.main-nav_container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    height: 30px;
+}
+
+.main-logo_text{
+    position: relative;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 27px;
+    color: $color_yellow;
+
+    &::after{
+        content: "cook&travel";
+        position: absolute;
+        top:0;
+        left: 0;
+        color: $color_black;
+        transform: translate(-1px, -1px);
+    }
+}
+
+.main-nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+
+    
+    .nav-item{
+        cursor: pointer;
+        min-width: 70px;
+        margin: 0 15px; 
+
+        transition: .3s;
+        &:hover{
+            text-shadow: $color_gray 2px 2px;
+        }
+    }
+}
+
+.main-social_container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    
+    .social-icon{
+        width: 25px;
+        height: 20px;
+        margin: 0 15px;
+        fill: $color_black;
+        transition: .3s;
+
+        &:hover{
+            filter: drop-shadow( 2px 2px $color_gray );
+        }
+    }
+}
+
+
+.main-title{
+    position: relative;
+    font-weight: 600;
+    font-size: 80px;
+    line-height: 98px;
+    color: $color_yellow;
+    margin-top: 140px;
+    padding: 15px 0;
+
+    &::after{
+        content: "Cook&Travel";
+        position: absolute;
+        padding: 15px 0;
+
+        top:0;
+        left: 0;
+        color: $color_black;
+        transform: translate(-3px, -3px);
+    }
+}
+
+.main-text{
+    margin-bottom: 60px;
+}
+
+.about-photo{
+    position: relative;
+}
+
+.achivement{
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+
+    .first-phrase{
+        top: 0;
+        left: 0;
+    }
+
+    .second-phrase{
+        position: relative;
+        font-weight: 900;
+        font-size: 80px;
+        line-height: 112px;
+    }
+
+    .third-phrase{
+        bottom: 0;
+    }
+}
+
+.achive-1{
+    top: 174px;
+    left: 400px;
+}
+
+.achive-2{
+    top: 380px;
+    left: 440px;
+}
+
+.achive-3{
+    top: 580px;
+    left: 400px;
+}

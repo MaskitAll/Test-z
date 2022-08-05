@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Maket</title>
+
+		<!-- Подключаем LESS-->
+<!--	<link rel="stylesheet/less" type="text/css" href="/css/maket-2.less" />-->
+	<script src="//cdn.jsdelivr.net/npm/less" ></script>
+
+	<link rel="stylesheet" type="text/css" href="/css/main.css">
+	<link rel="stylesheet" type="text/css" href="/css/scss/maket-2.css">
+
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,500;1,600;1,800&display=swap" rel="stylesheet">
+
+	<svg style="display: none;">
+	<symbol id="stop" viewBox="0 0 512 512">
+		<path d="m256 91c-90.980469 0-165 74.019531-165 165s74.019531 165 165 165 165-74.019531 165-165-74.019531-165-165-165zm90 240c0 8.289062-6.710938 15-15 15h-150c-8.289062 0-15-6.710938-15-15v-150c0-8.289062 6.710938-15 15-15h150c8.289062 0 15 6.710938 15 15zm0 0"/><path d="m196 196h120v120h-120zm0 0"/>
+	</symbol>
+</svg>
+
+</head>
+
+
+
+
+
+
+
+
+<body>
+<div id="band">
+	<div class="back_side">
+		<!-- Menu -->
+		<div id="menu" class="">
+			<ul class="menu">
+				<li><a href="/index.html">Домой</a></li>
+				<li><a href="#">Фото</a></li>
+				<li><a href="#">Продукты</a>
+					<ul>
+						<li><a href="#">Продукт 1</a></li>
+						<li><a href="#">Продукт 2</a></li>
+						<li><a href="#">Продукт 3</a></li>
+						<li><a href="#">Продукт 4</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Контакты</a></li>
+
+				<li class="bye"><a href="#">Купить</a></li>
+			</ul>
+		</div>
+
+		<!-- Menu 2 -->
+		<div id="menu-2" class="block">
+				<ul class="nav">
+					<li><a href="#">Информация </a></li>
+					<li><a href="#">Контакты</a></li>
+					<li><a href="#">Большой текст. Большой текст. Большой текст. Большой текст. Большой текст. Большой текст. Большой текст. Большой текст.</a></li>
+					<li><a href="#">Пункт 4</a></li>
+				</ul>
+			</div>
+
+			<!-- Slide -->
+			<div id="slide" class="block">
+			<div class="slide">
+				<div>1</div>
+				<div>2</div>
+				<div>3</div>
+				<div>4</div>
+			</div>
+			</div>
+
+			<!-- Timer -->
+			<div id="timer" class="block">
+				<div id="check">
+					<div class="check-block session">
+						<span>session lenth</span>
+						<div>
+							<div class="left-arrow arrow"></div>
+							<span class="lenght">5</span>
+							<div class="right-arrow arrow"></div>
+						</div>
+					</div>
+					<div class="check-block break">
+						<span>break lenth</span>
+						<div>
+							<div class="left-arrow arrow"></div>
+							<span class="lenght">5</span>
+							<div class="right-arrow arrow"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="circle-block">
+					<span class="timer-title">Timer</span>
+					<div class="timer-time">
+						<span class="min">00</span>
+						<span class="sec">00</span>
+					</div>
+				</div>
+
+					<div class = "stop">
+						<svg class="stop_icon">
+							<use xlink:href="#stop"></use>
+						</svg>
+					</div>
+			</div>
+
+
+			<!-- Scroller -->
+			<div class="scroller block" id="scroller">
+				<div class="scroller-container">
+					<div class="scroller__left">
+						<div class="scroller__text">&lt;</div>
+					</div>
+					<div class="scroller-container__img">
+
+						<div class="scroller__img">
+							<img src="/img/img_html_css/task-1.png" alt="1">
+						</div>
+
+						<div class="scroller__img">
+							<img src="/img/img_html_css/task-1.png" alt="1">
+						</div>
+
+
+
+					</div>
+					<div class="scroller__right">
+						<div class="scroller__text">&gt;</div>
+					</div>
+				</div>
+				<div class="scroller_scrol">
+				</div>
+			</div>
+
+
+			<!-- Drag&Drop -->
+
+		<div id="dragndrop" class="dragndrop block"
+			ondragenter="return dragEnter(event)"
+			 ondrop="return dragDrop(event)"
+			 ondragover="return dragOver(event)"
+			 ondragleave="return dragLeave(event)">
+
+			<!-- square -->
+			<div id="box_1" class="drag-box" draggable="true" ondragstart="return dragStart(event)">
+				<div class="drag square"></div>
+			</div>
+
+			<!-- circle -->
+			<div id="box_2" class="drag-box" draggable="true" ondragstart="return dragStart(event)">
+
+				<div class="drag circle"></div>
+			</div>
+
+			<!--  romb -->
+			<div id="box_3" class="drag-box" draggable="true" ondragstart="return dragStart(event)">
+
+				<div class="drag romb "></div>
+			</div>
+
+			<!--  -->
+			<div id="box_4" class="drag-box" draggable="true" ondragstart="return dragStart(event)">
+
+				<div class="drag triangle"></div>
+			</div>
+
+			<!--  -->
+			<div id="box_5" class="drag-box" draggable="true" ondragstart="return dragStart(event)">
+
+				<div class="drag circle little"></div>
+			</div>
+
+
+		</div>
+
+
+
+
+
+			<!-- Tabs -->
+
+		<div id="tabs" class="tabs block">
+			<div class="tabs_name">
+				<div class="tab_item" data-text="#tab_text_1">Tab 1</div>
+				<div class="tab_item" data-text="#tab_text_2">Tab 2</div>
+				<div class="tab_item" data-text="#tab_text_3">Tab 3</div>
+				<div class="tab_item" data-text="#tab_text_4">Empty tab</div>
+			</div>
+
+			<div class="tabs_text">
+				<div class="tab_text" id="tab_text_1">
+<p>Реальное действие, которое будет выполнено, и единственное возможное значение свойства effectAllowed.</p>
+				</div>
+				<div class="tab_text" id="tab_text_2">
+<p>Для событий dragenter и dragover, dropEffect будет инициализировано значением, зависящим от того, какое действие запрашивает пользователь. То, как это определяется, зависит от платформы, но, как правило, пользователи могут зажать клавиши-модификаторы для выбора желаемого действия. В обработчике событий для dragenter и dragover, dropEffect следует модифицировать, если запрашиваемое пользователем действие не то, которое требовалось.</p>
+				</div>
+				<div class="tab_text" id="tab_text_3">
+<p>Реальное действие, которое будет выполнено, и единственное возможное значение свойства effectAllowed.</p>
+
+<p>Для событий dragenter и dragover, dropEffect будет инициализировано значением, зависящим от того, какое действие запрашивает пользователь. То, как это определяется, зависит от платформы, но, как правило, пользователи могут зажать клавиши-модификаторы для выбора желаемого действия. В обработчике событий для dragenter и dragover, dropEffect следует модифицировать, если запрашиваемое пользователем действие не то, которое требовалось.</p>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+
+
+			<!-- Animation -->
+
+		<div id="animation" class="animation block">
+			<div id="con_1" class="con con-main" onclick="change_con()">
+				<p><span class="orange">За 1 год</span><br>
+				<span class="white">усердной работы</span></p>
+			</div>
+
+			<div id="con_2" class="con con-minor" onclick="change_con()">
+				<span class="grey">сформировали</span>
+				<p>
+					<span class="orange">команду</span><br>
+					<span class="white">Специалистов</span>
+				</p>
+			</div>
+		</div>
+
+
+
+
+
+
+		<div id="brif" class="brif block">
+
+			<!--	start 	-->
+			<div id="brif-page__start" class="">
+				<h1 class="brif-title">Бриф</h1>
+				<p class="brif-text">7 вопросов, которые помогут нам быстро расчитать цену.</p>
+				<button id="brif_btn" class="brif-btn">Пройти бриф</button>
+			</div>
+
+			<form action="" id="brif_form" class="inactive form" name="brif_form">
+			<!--	progress-bar 	-->
+					<div class="progress">
+						<div class="exp"></div>
+					</div>
+			<!--	form-content	-->
+
+				<!--	1 	-->
+				<div id="brif-page__1" class="inactive brif-page">
+
+					<div class="brif-label">Какой сайт вам нужен?</div>
+
+					<div class="form-options">
+						<div class="options_item">
+							<input class="options_input" id="singlePage" type="radio" name="page_1" value="single-page" >
+							<label class="options_label" for="singlePage">Одностраничный сайт</label>
+						</div>
+						<div class="options_item">
+							<input class="options_input" id="multiPage" type="radio" name="page_1" value="multi-page">
+							<label class="options_label" for="multiPage">Многостраничный сайт</label>
+						</div>
+						<div class="options_item">
+							<input class="options_input" id="storeSite" type="radio" name="page_1" value="store">
+							<label class="options_label" for="storeSite">Интернет-магазин</label>
+						</div>
+						<div class="options_item">
+							<input class="options_input" id="otherSite" type="radio" name="page_1" value="single-page">
+							<label class="options_label" for="otherSite">Я не знаю</label>
+						</div>
+					</div> <!--form-options-->
+				</div>	<!--brif-page-->
+
+				<!--	2 	-->
+				<div id="brif-page__2" class="inactive brif-page">
+
+					<div class="brif-label">Чем занимается ваша компания?</div>
+
+					<div class="form-options">
+						<textarea class="options_textarea" id="" name="" value=""></textarea>
+					</div> <!--form-options-->
+				</div>	<!--brif-page-->
+
+				<!--	3 	-->
+				<div id="brif-page__3" class="inactive brif-page">
+
+					<div class="brif-label">Оставьте ссылку на текущий сайт и/или социальные сети.</div>
+
+					<div class="form-options .link">
+						<textarea class="options_textarea" id="" name="" value="" placeholder = "http://example.ru"></textarea>
+					</div> <!--form-options-->
+				</div>	<!--brif-page-->
+
+				<!--	4 	-->
+				<div id="brif-page__4" class="inactive brif-page">
+
+					<div class="brif-label">Цель сайта</div>
+
+					<div class="form-options">
+						<div class="options_item">
+							<input class="options_input" id="salesRequests" type="radio" name="page_4" value="salesRequests" >
+							<label class="options_label" for="salesRequests">Продажи и заявки</label>
+						</div>
+						<div class="options_item">
+							<input class="options_input" id="needSite" type="radio" name="page_4" value="needSite">
+							<label class="options_label" for="needSite">Просто нужен сайт</label>
+						</div>
+						<div class="options_item">
+							<input class="options_input" id="imageDemonstration" type="radio" name="page_4" value="imageDemonstration">
+							<label class="options_label" for="imageDemonstration">Демонстрация имиджа</label>
+						</div>
+						<div class="options_item">
+							<input class="options_input" id="otherPurpose" type="radio" name="page_4" value="otherPurpose">
+							<label class="options_label" for="otherPurpose">Другое</label>
+						</div>
+					</div> <!--form-options-->
+				</div>	<!--brif-page-->
+
+				<!--	5 	-->
+				<div id="brif-page__5" class="inactive brif-page">
+
+					<div class="brif-label">Примерное количество страниц на сайте.</div>
+
+					<div class="form-options .num">
+						<textarea class="options_textarea" id="" name="" value=""></textarea>
+					</div> <!--form-options-->
+				</div>	<!--brif-page-->
+
+				<!--	6 	-->
+				<div id="brif-page__6" class="inactive brif-page">
+
+					<div class="brif-label">Укажите адреса сайтов ваших конкурентов.</div>
+					<div class="form-options .link">
+						<textarea class="options_textarea" id="" name="" value="" placeholder = "http://example.ru"></textarea>
+					</div> <!--form-options-->
+				</div>	<!--brif-page-->
+
+				<!--	7 	-->
+				<div id="brif-page__7" class="inactive brif-page">
+
+					<div class="brif-label">Дополнительный функционал</div>
+
+					<div class="form-options">
+						<div class="options_item">
+							<input class="options_input" id="mobileVersion" type="checkbox" name="page_7" value="mobileVersion" >
+							<label class="options_label" for="mobileVersion">Мобильная версия</label>
+						</div>
+						<div class="options_item">
+							<input class="options_input" id="corporateStyle" type="checkbox" name="page_7" value="corporateStyle">
+							<label class="options_label" for="corporateStyle">Фирменный стиль</label>
+						</div>
+						<div class="options_item">
+							<input class="options_input" id="createContent" type="checkbox" name="page_7" value="createContent">
+							<label class="options_label" for="createContent">Создание контента</label>
+						</div>
+						<div class="options_item">
+							<input class="options_input" id="onlinePayment" type="checkbox" name="page_7" value="onlinePayment">
+							<label class="options_label" for="onlinePayment">Онлайн оплата</label>
+						</div>
+						<div class="options_item">
+							<input class="options_input" id="SEOoptimization" type="checkbox" name="page_7" value="SEOoptimization">
+							<label class="options_label" for="SEOoptimization">SEO оптимизация</label>
+						</div>
+					</div> <!--form-options-->
+				</div>	<!--brif-page-->
+
+				<!--	8 	-->
+				<div id="brif-page__8" class="inactive brif-page">
+
+					<div class="brif-label">Оставьте контакные данные.</div>
+
+					<div class="form-options">
+						<input class="options_textarea" id="" type="text" name="name" placeholder="Имя">
+					</div>
+					<div class="form-options .tel">
+						<input class="options_textarea" id="" type="tel" name="tel" placeholder="Телефон">
+					</div> <!--form-options-->
+				</div>	<!--brif-page-->
+
+
+			<!-- 	arrows-content 	-->
+					<div class="arrows">
+						<div class="arrow-left">&lt;</div>
+						<input type="reset" value="" class="reset">
+						<div class="exit">X</div>
+						<div class="arrow-right">&gt;</div>
+					</div>
+
+
+							<!--	Endless 	-->
+			<div id="brif-page__endless" class="page_endless">
+				<div class="brif-label">Всё получилось!<br>
+										Мы свяжемся с Вами <br>
+										в ближайшее время <br>
+										и детально обсудим проект.
+										</div>
+			</div>
+
+		</form>
+		</div>
+
+
+
+
+
+
+			<!-- Comment -->
+
+<!--	Проект заморожен пока не перестану ебаться с PHP	-->
+
+			<div id="comment" class="comment block">
+				<div id="comments" class="comments">1</div>
+
+				<form action="send.php" method="POST" class="comment_form block" name="comment_form">
+
+					<fieldset class="fieldset">
+					<legend>Comment</legend>
+
+					<p>Name:
+						<input id="name" name="name" value="123"></p>
+					<p>Comment:
+						<textarea maxlength="35" style="resize: none" name="comment_text"> </textarea>
+					</p>
+
+
+					<input type="submit" class="button" onclick="writeComment()" value="Отправить">
+
+					</fieldset>
+				</form>
+
+			</div>
+
+
+
+
+		<!-- Buttons -->
+
+		<div id="buttons" class="buttons block">
+			<!--NEON-->
+			<div class="buttons_container">
+				<div class="button btn__neon">Button 1
+				<ul>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+				</div>
+			</div>
+
+			<!--SHADOW-->
+			<div class="buttons_container">
+				<div class="button btn__shadow">Button 2</div>
+			</div>
+
+			<!--GARMONIA-->
+			<div class="buttons_container">
+				<div class="button btn__border">Button 3
+					<ul>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+			</div>
+
+			<!--SWIPE-->
+			<div class="buttons_container">
+				<div class="button btn__swipe_left">Button 4
+				</div>
+			</div>
+			<div class="buttons_container">
+				<div class="button btn__swipe_right">Button 5
+				</div>
+			</div>
+			<div class="buttons_container">
+				<div class="button btn__swipe_top">Button 6
+				</div>
+			</div>
+			<div class="buttons_container">
+				<div class="button btn__swipe_bottom">Button 7
+				</div>
+			</div>
+			<div class="buttons_container">
+				<div class="button btn__swipe_center">Button 7
+				</div>
+			</div>
+
+			<!--OTHERS-->
+			<div class="buttons_container">
+				<div class="button ">Button 9
+				</div>
+			</div>
+			<div class="buttons_container">
+				<div class="button ">Button 10
+				</div>
+			</div>
+
+
+		</div>
+
+
+<!--  3D -->
+
+		<div id="canvas" class="block">
+
+		<p>Управлять можно QWEADZC. DEMO-версия</p>
+		<p>Не рекомендуется делать слишком большие или слишком маленьке кубы.</p>
+
+		<div class="canvas">
+			<div class="line line1">1</div>
+		</div>
+
+		<div class="canvas_control">
+			<form action="">
+
+				<div class="control_options">
+					<label class="" for="canvasOx">Ox </label>
+					<input id = "canvasOx" type="text" placeholder="-500 : 500">
+				</div>
+
+				<div class="control_options">
+					<label class="" for="canvasOy">Oy</label>
+					<input id = "canvasOy" type="text" placeholder="-500 : 500">
+				</div>
+
+				<div class="control_options">
+					<label class="" for="canvasOz">Oz</label>
+					<input id = "canvasOz" type="text" placeholder="-500 : 500">
+				</div>
+
+				<div class="control_options">
+					<label class="" for="canvasWidth">width</label>
+					<input id = "canvasWidth" type="text" placeholder="0 : 500">
+				</div>
+
+				<div class="control_options">
+					<label class="" for="canvasHeight">height</label>
+					<input id = "canvasHeight" type="text" placeholder="0 : 500">
+				</div>
+
+				<div class="control_options">
+					<label class="" for="canvasDepth">depth</label>
+					<input id = "canvasDepth" type="text" placeholder="0 : 500">
+				</div>
+
+				<button id="control_button" class="button" >Создать</button>
+
+			</form>
+		</div>
+		</div>
+
+
+
+</div><!-- back_side -->
+</div><!-- band -->
+
+			<!-- Burger -->
+
+			<div class="burger-menu" id="burger-menu">
+				<div id="burger" class="burger">
+					<div class="burger-line"></div>
+				</div>
+
+				<div class="menu-context">
+					<a href="#menu" class="section" id="section-1">Секция 1</a>
+					<a href="#menu-2" class="section" id="section-2">Секция 2</a>
+					<a href="#slide" class="section" id="section-3">Секция 3</a>
+					<a href="#timer" class="section" id="section-4">Секция 4</a>
+					<a href="#scroller" class="section" id="section-5">Секция 5</a>
+					<a href="#dragndrop" class="section" id="section-6">Секция 6</a>
+					<a href="#tabs" class="section" id="section-7">Секция 7</a>
+					<a href="#animation" class="section" id="section-8">Секция 8</a>
+					<a href="#comment" class="section" id="section-9">Секция 9</a>
+
+				</div>
+
+				<div id="info">
+					<div class="info-text section">?</div>
+				</div>
+			</div>
+
+
+			<!-- Message-Window -->
+
+			<div class="blackout-full">
+				<div id="message_registr" class="message block">
+					<div class="message-text">
+					<p>Здравствуйте</p>
+					<p>Это пробная страница для работы с html/css/js. Тут выкладываются всякие интересные шутки.</p>
+					Начало: 12/08/2020
+				</div>
+					<button class="button button-close"> Закрыть </button>
+				</div>
+			</div>
+
+</body>
+</html>
+
+
+
+
+<script src="/js/timer.js"></script>
+<script src="/js/brif.js"></script>
+<script src="/js/cube.js"></script>
+<script type="text/javascript">
+
+	//ANIMATION
+
+	var c1= document.getElementById('con_1');
+	var c2= document.getElementById('con_2');
+
+	function change_con(){
+		if(c1.classList.contains('con-main')){
+			swipe_con(c1, c2);
+		}else{
+			swipe_con(c2, c1);
+		}
+	}
+
+
+	function swipe_con(c1, c2){
+			 check_main(c2);
+			check_minor(c1);
+	}
+
+	function check_main(c){
+			c.classList.add('con-main');
+			c.classList.remove('con-minor');
+	}
+
+	function check_minor(c){
+			c.classList.add('con-minor');
+			c.classList.remove('con-main');
+	}
+
+
+	// BURGER
+	var burger = document.querySelector("#burger");
+	var bm = document.querySelector(".burger-menu");
+
+
+	burger.addEventListener('click', function(){
+		if(bm.classList.contains("burger-menu_active")){
+			burger.classList.remove("burger-active");
+			bm.classList.remove("burger-menu_active");
+		} else{
+			burger.classList.add("burger-active");
+			bm.classList.add("burger-menu_active");
+		}
+	});
+
+
+	// SLIDER
+	var right = document.querySelector(".scroller__right");
+	var left = document.querySelector(".scroller__left");
+	var img_box = document.querySelector(".scroller-container__img");
+
+		img_box.style.left = 0 + 'px';
+
+	right.addEventListener('click', function(){
+		img_box.style.left = parseInt(img_box.style.left) + 90 + '%';
+	});
+
+	left.addEventListener('click', function(){
+		img_box.style.left = parseInt(img_box.style.left) - 90 + '%';
+	});
+
+
+
+	document.querySelector(".button-close").addEventListener('click', function(){
+		close();
+	});
+	document.querySelector(".blackout-full").addEventListener('click', function(){
+		close();
+	});
+
+	document.querySelector("#info").addEventListener('click', function(){
+		document.querySelector(".blackout-full").style.display="block";
+	});
+
+	var close = function(){
+		document.querySelector(".blackout-full").style.display="none";
+	}
+
+
+
+	// DRAG&DROP
+// начало перетаскивания объекта
+function dragStart(ev) {
+	   ev.dataTransfer.effectAllowed='move';
+	   ev.dataTransfer.setData("Text", ev.target.id);
+
+
+	console.log(ev.target);
+	let evH = ev.target.clientHeight;
+	console.log(evH);
+	let evW = ev.target.clientWidth;
+	console.log(evW);
+
+	ev.dataTransfer.setDragImage(ev.target, evH - 20, evW - 20);
+	ev.target.style.opacity = "0.3";
+
+}
+//перетаскиваемый объект попадает на объект-приемник
+function dragEnter(ev) {
+	ev.preventDefault();
+}
+//перемещение перетаскиваемого объекта над объектом-приемником
+function dragOver(ev) {
+	ev.preventDefault();
+
+	ev.target.style.border= "2px solid red";
+//
+//	console.log(document.getElementById(ev.dataTransfer.getData("Text")));
+//	console.log(ev.target);
+}
+//перетаскиваемый объект покидает объект-приемник
+function dragLeave(ev) {
+	ev.preventDefault();
+	ev.target.style.border= "none";
+}
+//перемещаемый объект попадает на объект-приемник и пользователь отпускает кнопку мыши
+function dragDrop(ev) {
+   var data = ev.dataTransfer.getData("Text");
+	ev.stopPropagation();
+	ev.target.appendChild(document.getElementById(data));
+
+	ev.target.style.border= "none";
+//
+//	document.getElementById(data).clientLeft = ev.offsetX + "px";
+//	document.getElementById(data).clientTop = ev.offsetY + "px";
+	document.getElementById(data).style.opacity = "1";
+//
+//	document.getElementById(data).style.x= ev.offsetX + "px";
+//	document.getElementById(data).style.y= ev.offsetY + "px";
+//
+//	console.log(ev.offsetX);
+//	console.log(ev.offsetY);
+//
+//
+//	console.log(document.getElementById(data).style.x);
+//	console.log(document.getElementById(data).style.y);
+//
+//
+//
+//	console.log(document.getElementById(data));
+//	console.log(ev);
+//	console.log(ev.dataTransfer);
+//	console.log(ev.target);
+//
+}
+
+
+
+
+/* TABS */
+
+let tabNames = document.querySelectorAll(".tab_item");
+let tabTexts = document.querySelectorAll(".tab_text");
+
+tabNames.forEach(function(item){
+	item.addEventListener("click", function(){
+
+		if(!item.classList.contains("active")){
+			let tabId = item.getAttribute("data-text");
+			let tabText = document.querySelector(tabId);
+
+			tabNames.forEach(function(item){
+				item.classList.remove("active");
+			});
+
+			tabTexts.forEach(function(item){
+				item.classList.remove("active");
+			});
+
+			item.classList.add("active");
+			if(tabText){
+				tabText.classList.add("active");
+			}
+		}
+	});
+});
+
+
+document.querySelector(".tab_item:nth-child(1)").click();
+
+
+
+
+	// COMMENT
+
+//	var comment = document.getElementById('comments');
+//	var com = document.getElementById('name');
+//function writeComment(){
+//	comment.textContent = document.com.name;
+//}
+</script>
+
+

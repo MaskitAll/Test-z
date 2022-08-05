@@ -1,0 +1,94 @@
+<link rel="stylesheet" type="text/css" href="../css/main.css">
+
+<div class = "test green">
+	<h2 style="margin-left: 40px">Задача 31. "Яндекс"</h2>
+	Условие: Создайте html- и css- файлы, результат которых показан на рисунке.
+	<br>
+<img src="../../img/img_html_css/task-31.png" alt="task-31"><br>
+
+<h1 align="center">***</h1><br>
+<div class = "decision" style="margin-left: 20%; width: 80%;">
+	<div id="back">
+		<div class="border">
+			<div class="Ya" onselectstart="return false" onmousedown="return false">Яндекс</div>
+			<div class="col" onselectstart="return false" onmousedown="return false">0</div>
+		</div>
+	</div>
+	<br> 14/08/2020
+</div>
+	<a href="../content.html"><h3>&lt;&mdash; Назад</h3></a>
+</div>
+
+
+<style type="text/css">
+	.decision{
+	}
+
+	#back{
+		width: 600px;
+		height: 600px;
+
+	}
+
+	.border{
+		border: 1px solid #ddd;
+		border-radius: 10px;
+
+		width: 300;
+		height: 100;
+
+	}
+
+	.Ya{
+		font-family: sans-serif;
+		font-size: 48;
+		font-weight: bolder;
+		font-stretch: extra-condensed;
+		transform: scale(1, 1.5);
+		letter-spacing: 4px;
+
+		padding: 20px;
+		text-align: center;
+		text-shadow: 0 0 5px black;
+
+		cursor: default;
+	}
+
+	.Ya::first-letter{
+		color: red;
+	}
+
+	.col{
+		position: relative;
+		border: 1px solid #ddd;
+		border-radius: 5px;
+		background: linear-gradient(to top, #eee, #dcdcdc);
+
+		font-size: 24;
+		font-weight: 600;
+		color: #888;
+
+		width: 30px;
+		height: 36px;
+		text-align: center;
+		padding-top: 8px;
+		box-shadow: 0 2px 1px #fff inset,
+					0 -2px 2px #aaa inset;
+
+		bottom: 68px;
+		left: 285px;
+		cursor: grab;
+	}
+
+	.col:hover{
+		box-shadow: 0 2px 1px #aaa inset,
+					0 -2px 2px #fff inset;
+	}
+
+</style>
+
+<script>
+	var digit = 4;
+	document.querySelector('.col').textContent = digit;
+
+</script>

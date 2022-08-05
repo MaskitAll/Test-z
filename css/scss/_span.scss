@@ -1,0 +1,139 @@
+@import 'font';
+
+/*FONTs*/
+@font-face {
+	font-family: 'Book Antiqua';
+	src: local('Book Antiqua'),
+	url(../fonts/bookAntiqua.ttf),
+	format('ttf');
+//	font-display: fallback;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+%montserrat{
+	font-family: 'Montserrat', sans-serif;
+}
+
+%bookAntiqua{
+	font-family: 'Book Antiqua', serif;
+}
+
+h1{
+	@extend %bookAntiqua;
+	@include font(6.4rem, 700, 4.6rem, normal);
+}
+
+h2{
+	@extend %bookAntiqua;
+	@include font(2.8rem, 700, 4.6rem, normal);
+}
+
+h3{
+	@extend %bookAntiqua;
+	@include font(3.6rem, 700, 4.5rem, normal);
+}
+
+h4{
+	@extend %bookAntiqua;
+	@include font(2.4rem, 700, 2.9rem, normal);
+}
+
+p{
+	@extend %montserrat;
+	@include font(1.6rem, 400, 2rem, normal);
+	margin: 2rem 0 0;
+}
+
+.data{
+	@extend %montserrat;
+	@include font(1.8rem, 400, 4.6rem, normal);
+}
+
+ul{
+	@include column;
+
+	@extend %bookAntiqua;
+	@include font(2.2rem, 400, 2.7rem, normal);
+}
+
+#pre-nav{
+	font-weight: 800;
+	font-size: 1.5rem;
+	background-color: red;
+}
+
+
+
+.open_fragment-font{
+	@extend %montserrat;
+	@include font(2.2rem, 400, 2.7rem, normal);
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+
+.btn_1{
+	@extend %bookAntiqua;
+	@include font(1.8rem, 700, 2.2rem, normal);
+}
+
+.btn_2{
+	@extend %bookAntiqua;
+	@include font(1.8rem, 400, 2.2rem, normal);
+}
+
+.btn_3{
+	@extend %montserrat;
+	@include font(1.6rem, 400, 1.9rem, normal);
+}
+
+.btn_4{
+	@extend %montserrat;
+	@include font(1.8rem, 400, 2.2rem, normal);
+}
+
+/*THEMEs*/
+
+
+
+
+
+
+
+/*BTNs*/
+
+.btn{
+	@include block(.5rem, 1rem 2rem, 0);
+	min-width: 16rem;
+	margin-right: 2rem;
+
+	cursor: pointer;
+	transition: .2s;
+}
+
+.btn-dark{
+	@include theme(dark, true);
+	svg{
+		fill: $light;
+	}
+}
+.btn-light{
+	@include theme(light, true);
+	svg{
+		fill: $black;
+	}
+}
+
+.instagram{
+//	padding-left: 4rem;
+	margin-top: 2rem;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
+//	background: url(/img/instagram.svg) no-repeat .5rem center;
+//	background-size: 3rem;
+	svg{
+
+	}
+}

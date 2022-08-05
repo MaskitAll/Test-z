@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Maket</title>
+	<link rel="icon" href="/img/favicon/favicon.ico" type="image/x-icon">
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Подключаем LESS-->
+<!--	<script src="//cdn.jsdelivr.net/npm/less" ></script>-->
+
+<!--	<link rel="stylesheet" type="text/css" href="/css/reset.css">-->
+	<link rel="stylesheet" href="/css/reset.css">
+	<link rel="stylesheet" href="/css/css/maket-3.css">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,500;1,600;1,800&display=swap" rel="stylesheet">
+
+	<svg style="display: none;">
+	<symbol id="stop" viewBox="0 0 512 512">
+		<path d="m256 91c-90.980469 0-165 74.019531-165 165s74.019531 165 165 165 165-74.019531 165-165-74.019531-165-165-165zm90 240c0 8.289062-6.710938 15-15 15h-150c-8.289062 0-15-6.710938-15-15v-150c0-8.289062 6.710938-15 15-15h150c8.289062 0 15 6.710938 15 15zm0 0"/><path d="m196 196h120v120h-120zm0 0"/>
+
+	</symbol>
+</svg>
+
+</head>
+
+
+
+<body>
+
+
+<!-- Maket -->
+<div id="maket" class="column text _box-hangX _dark">
+
+<!--Кнопка вверх-->
+	<div id="scrollToTop" class="on_top-arrow _dark" v-if="isShowPage != 0"  onclick="goUp()">
+		<svg viewBox="0 0 27 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<path fill-rule="evenodd" clip-rule="evenodd" d="M27 14.4985C27 14.1145 26.853 13.7305 26.5605 13.438L14.5607 1.43863C13.9742 0.852162 13.0262 0.852162 12.4397 1.43863L0.439868 13.438C-0.146624 14.0245 -0.146624 14.9725 0.439868 15.5589C1.02636 16.1454 1.97435 16.1454 2.56084 15.5589L13.5002 4.61997L24.4395 15.5589C25.026 16.1454 25.974 16.1454 26.5605 15.5589C26.853 15.2664 27 14.8825 27 14.4985Z" fill="white"/>
+		</svg>
+	</div>
+
+
+<!-- Menu -->
+<div id="menu" class="">
+	<ul class="menu row">
+		<li><a href="/index.html">Домой</a></li>
+		<li><a href="#">Фото</a></li>
+		<li><a href="#">Продукты</a>
+			<ul>
+				<li><a href="#">Продукт 1</a></li>
+				<li><a href="#">Продукт 2</a></li>
+				<li><a href="#">Продукт 3</a></li>
+				<li><a href="#">Продукт 4</a></li>
+			</ul>
+		</li>
+		<li><a href="#">Контакты</a></li>
+
+		<li class="bye btn"><a href="#">Купить</a></li>
+	</ul>
+</div>
+
+
+<!-- Text -->
+<div class="content _block _box-insetS _light">
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere ullam ab architecto ex cumque, consequatur molestias aliquam accusamus earum deserunt vel nobis, fugiat, itaque repellendus magnam doloribus possimus temporibus tempore.</p>
+</div>
+
+
+<!-- Slide -->
+<div id="slide" class="_block _box-insetM _light">
+<div class="slide">
+	<div>1</div>
+	<div>2</div>
+	<div>3</div>
+	<div>4</div>
+</div>
+</div>
+
+
+
+	<!-- Tabs -->
+
+<div id="tabs" class="tabs _block _box-insetM _light">
+	<div class="tabs_name">
+		<div class="tab_item" data-text="#tab_text_1">Tab 1</div>
+		<div class="tab_item" data-text="#tab_text_2">Tab 2</div>
+		<div class="tab_item" data-text="#tab_text_3">Tab 3</div>
+		<div class="tab_item" data-text="#tab_text_4">Empty tab</div>
+	</div>
+
+	<div class="tabs_text">
+		<div class="tab_text" id="tab_text_1">
+<p>Реальное действие, которое будет выполнено, и единственное возможное значение свойства effectAllowed.</p>
+		</div>
+		<div class="tab_text" id="tab_text_2">
+<p>Для событий dragenter и dragover, dropEffect будет инициализировано значением, зависящим от того, какое действие запрашивает пользователь. То, как это определяется, зависит от платформы, но, как правило, пользователи могут зажать клавиши-модификаторы для выбора желаемого действия. В обработчике событий для dragenter и dragover, dropEffect следует модифицировать, если запрашиваемое пользователем действие не то, которое требовалось.</p>
+		</div>
+		<div class="tab_text" id="tab_text_3">
+<p>Реальное действие, которое будет выполнено, и единственное возможное значение свойства effectAllowed.</p>
+
+<p>Для событий dragenter и dragover, dropEffect будет инициализировано значением, зависящим от того, какое действие запрашивает пользователь. То, как это определяется, зависит от платформы, но, как правило, пользователи могут зажать клавиши-модификаторы для выбора желаемого действия. В обработчике событий для dragenter и dragover, dropEffect следует модифицировать, если запрашиваемое пользователем действие не то, которое требовалось.</p>
+		</div>
+	</div>
+</div>
+
+<!-- Stars -->
+	<div id="star_css" class="star _block _box-insetM _light">
+		<input id="star1" type="radio" name="star">
+		<label for="star1"></label>
+		<input id="star2" type="radio" name="star">
+		<label for="star2"></label>
+		<input id="star3" type="radio" name="star">
+		<label for="star3"></label>
+		<input id="star4" type="radio" name="star">
+		<label for="star4"></label>
+		<input id="star5" type="radio" name="star">
+		<label for="star5"></label>
+	</div>
+
+<!--
+	<div id="star2" class="star _block _box-insetM _light">
+		<input id="star10" type="radio" name="star2">
+		<label for="star10"></label>
+		<input id="star20" type="radio" name="star2">
+		<label for="star20"></label>
+		<input id="star30" type="radio" name="star2">
+		<label for="star30"></label>
+		<input id="star40" type="radio" name="star2">
+		<label for="star40"></label>
+		<input id="star50" type="radio" name="star2">
+		<label for="star50"></label>
+	</div>
+-->
+
+	<div id="star_js" class="_block _box-insetM _light">
+
+		<div>
+			<div class="stars"></div><p class="progress" id="p1"></p>
+		</div>
+	</div>
+
+
+	<!-- Timer -->
+	<div id="timer" class="_block _box-insetM _light">
+		<h2 style="margin-bottom: 1rem;">Таймер</h2>
+
+		<div id="check">
+			<div class="check-container session">
+				<span>session lenth</span>
+				<div>
+					<div class="left-arrow arrow"></div>
+					<span class="lenght">5</span>
+					<div class="right-arrow arrow"></div>
+				</div>
+			</div>
+			<div class="check-container break">
+				<span>break lenth</span>
+				<div>
+					<div class="left-arrow arrow"></div>
+					<span class="lenght">5</span>
+					<div class="right-arrow arrow"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="circle-container">
+			<span class="timer-title">Timer</span>
+			<div class="timer-time">
+				<span class="min">00</span>
+				<span class="sec">00</span>
+			</div>
+		</div>
+
+		<div class = "stop">
+			<svg class="stop_icon">
+				<use xlink:href="#stop"></use>
+			</svg>
+		</div>
+	</div>
+
+
+	<!-- Guess the number  -->
+	<div id="guess_the_number" class="_block _box-insetM _light">
+		<h2 style="margin-bottom: 1rem;">Игра "Угадай число"</h2>
+
+		<div class="GTN-input_container">
+			<div class="GTN-one_number">
+				<button class="GTN-number_up">&uArr;</button>
+				<input 	class="GTN-number" type="number" readonly value="5">
+				<button class="GTN-number_down">&dArr;</button>
+			</div>
+			<div class="GTN-one_number">
+				<button class="GTN-number_up">&uArr;</button>
+				<input 	class="GTN-number" type="number" readonly value="5">
+				<button class="GTN-number_down">&dArr;</button>
+			</div>
+			<div class="GTN-one_number">
+				<button class="GTN-number_up">&uArr;</button>
+				<input 	class="GTN-number" type="number" readonly value="5">
+				<button class="GTN-number_down">&dArr;</button>
+			</div>
+			<div class="GTN-one_number">
+				<button class="GTN-number_up">&uArr;</button>
+				<input 	class="GTN-number" type="number" readonly value="5">
+				<button class="GTN-number_down">&dArr;</button>
+			</div>
+		</div>
+
+		<button id="GTN-submit" class="btn">Проверить результат</button>
+		<button id="GTN-reset" class="btn">Начать заново</button>
+
+		<div id="GTN-result_message">Подберите число, которое загадал компьютер</div>
+	</div>
+
+
+	<!-- Math Tests  -->
+	<div id = "math_test" class="_block _box-insetM _light">
+		<h2 style="margin-bottom: 1rem;">Задачи по математике</h2>
+		<form action="" style="flex-direction: row;" >
+			<label><input name="math_level" type="radio" value="easy" onclick="changeRadioBox()" checked>Легкий</label>
+			<label><input name="math_level" type="radio" value="medium" onclick="changeRadioBox()">Средний</label>
+			<label><input name="math_level" type="radio" value="hard" onclick="changeRadioBox()">Сложный</label>
+		</form> 
+
+		<div class="math_container">
+			<label id = "math_task" for="math_text">23 * 42 = </label>
+			<input type="text" id = "math_text" oninput="checkAnswer()">
+		</div>
+		<div class="content">
+		<p>Задачи генерируются при вводе правильного ответа. Деление следует считать в целых числах.<br>(Например 17 / 4 = 4; 3 / 4 = 0). </p>	
+		</div>
+	</div>
+
+	<!-- Math Tests  -->
+	<div id = "music" class="_block _box-insetM _light">
+		<h2 style="margin-bottom: 1rem;">Музыкальная шкатулка</h2>
+		<div class="" style="display: flex; flex-direction: column;padding: .5rem;">
+			<span id = "frequency_label" class="">Частота: 440Гц</span>
+			<input type="range" id="frequency" oninput="changeFrequency()" min="16.35" max="7902.13" value="440" style="margin-top: 1rem;">
+			
+			<span id = "delay_label" class="" style="margin-top: 1rem;">Задержка: 500мс</span>
+			<input type="range" id="delay" oninput="changeDelay()" min="0" max="1000" value="500" style="margin-top: 1rem;">
+
+			<span id = "gain_label" class="" style="margin-top: 1rem;">Усиление: 0</span>
+			<input type="range" id="gain" oninput="changeGain()" min="0" max="10" value="0" step=".01" style="margin-top: 1rem;">
+		</div>
+		<button onclick="goMusic()">Воспроизвести</button>
+		<button onclick="remember()">Запомнить звук</button>
+	</div>
+
+
+
+
+<!-- Canvas -->
+	<div id="canvas" class="_block _box-insetM _light" width = "300" height = "150">
+		<h2 style="margin-bottom: 1rem;">Игра "Жизнь"</h2>
+		<div class="checkbox-container check-born">
+			<span class="preTab">Выживает:</span>
+			<input class="checkbox" type="checkbox" name="born[]" value="ch0" id="ch_b-0">
+			<label for="ch_b-0">0</label>
+			<input class="checkbox" type="checkbox" name="born[]" value="ch1" id="ch_b-1">
+			<label for="ch_b-1">1</label>
+			<input class="checkbox" type="checkbox" name="born[]" value="ch2" id="ch_b-2" checked>
+			<label for="ch_b-2">2</label>
+			<input class="checkbox" type="checkbox" name="born[]" value="ch3" id="ch_b-3" checked>
+			<label for="ch_b-3">3</label>
+			<input class="checkbox" type="checkbox" name="born[]" value="ch4" id="ch_b-4">
+			<label for="ch_b-4">4</label>
+			<input class="checkbox" type="checkbox" name="born[]" value="ch5" id="ch_b-5">
+			<label for="ch_b-5">5</label>
+			<input class="checkbox" type="checkbox" name="born[]" value="ch6" id="ch_b-6">
+			<label for="ch_b-6">6</label>
+			<input class="checkbox" type="checkbox" name="born[]" value="ch7" id="ch_b-7">
+			<label for="ch_b-7">7</label>
+			<input class="checkbox" type="checkbox" name="born[]" value="ch8" id="ch_b-8">
+			<label for="ch_b-8">8</label>
+		</div>
+		<div class="checkbox-container check-survive">
+			<span class="preTab">Рождается:</span>
+			<input class="checkbox" type="checkbox" name="surv[]" value="ch0" id="ch_s-0">
+			<label for="ch_s-0">0</label>
+			<input class="checkbox" type="checkbox" name="surv[]" value="ch1" id="ch_s-1">
+			<label for="ch_s-1">1</label>
+			<input class="checkbox" type="checkbox" name="surv[]" value="ch2" id="ch_s-2">
+			<label for="ch_s-2">2</label>
+			<input class="checkbox" type="checkbox" name="surv[]" value="ch3" id="ch_s-3" checked>
+			<label for="ch_s-3">3</label>
+			<input class="checkbox" type="checkbox" name="surv[]" value="ch4" id="ch_s-4">
+			<label for="ch_s-4">4</label>
+			<input class="checkbox" type="checkbox" name="surv[]" value="ch5" id="ch_s-5">
+			<label for="ch_s-5">5</label>
+			<input class="checkbox" type="checkbox" name="surv[]" value="ch6" id="ch_s-6">
+			<label for="ch_s-6">6</label>
+			<input class="checkbox" type="checkbox" name="surv[]" value="ch7" id="ch_s-7">
+			<label for="ch_s-7">7</label>
+			<input class="checkbox" type="checkbox" name="surv[]" value="ch8" id="ch_s-8">
+			<label for="ch_s-8">8</label>
+		</div>
+
+		<div class="canvas-container">
+			<canvas id="example"></canvas>
+			<div class="v-range">
+			<input type="range" id="lifeSize" oninput="changeSize()" min="1" max="5" value="4">
+			</div>
+		</div>
+
+		<div class="btn-container">
+			<button class="btn" id="lifeStart">Начать</button>
+			<button class="btn" id="lifePause">Пауза</button>
+			<button class="btn" id="lifeNext">Следующий день</button>
+			<button class="btn" id="lifeRand">Заполнить рандомно</button>
+			<button class="btn" id="lifeReset">Сбросить</button>
+		</div>
+		<div class="h-range">
+		<input type="range" id="lifeSpeed" oninput="changeSpeed()" min="1" max="20" value="15">
+		</div>
+<div class="content">
+<p>Место действия этой игры — «вселенная» — это размеченная на клетки поверхность или плоскость — безграничная, ограниченная, или замкнутая (в пределе — бесконечная плоскость).<br>
+Каждая клетка на этой поверхности может находиться в двух состояниях: быть «живой» (заполненной) или быть «мёртвой» (пустой). Клетка имеет восемь соседей, окружающих её.<br>
+Распределение живых клеток в начале игры называется первым поколением. Каждое следующее поколение рассчитывается на основе предыдущего по таким правилам:<br>
+в пустой (мёртвой) клетке, рядом с которой ровно три живые клетки, зарождается жизнь;<br>
+если у живой клетки есть две или три живые соседки, то эта клетка продолжает жить;<br>
+в противном случае, если соседей меньше двух или больше трёх, клетка умирает («от одиночества» или «от перенаселённости»)<br>
+Игра прекращается, если на поле не останется ни одной «живой» клетки
+конфигурация на очередном шаге в точности (без сдвигов и поворотов) повторит себя же на одном из более ранних шагов (складывается периодическая конфигурация)
+при очередном шаге ни одна из клеток не меняет своего состояния (складывается стабильная конфигурация;
+предыдущее правило, вырожденное до одного шага назад)<br>
+Эти простые правила приводят к огромному разнообразию форм, которые могут возникнуть в игре.
+
+Игрок не принимает прямого участия в игре, а лишь расставляет или генерирует начальную конфигурацию «живых» клеток, которые затем взаимодействуют согласно правилам уже без его участия (он является наблюдателем).</p>
+</div>
+</div>
+
+
+<!-- Go -->
+<div id="GO-game" class="_block _box-insetM _light" width = "300" height = "300">
+	<h2 style="margin-bottom: 1rem;">Игра "Го"</h2>
+
+	<div class="canvas-container">
+		<canvas id="GO_canvas"  width = "300" height = "300"></canvas>
+	</div>
+	<button class = "btn btn-disabled" id = "GO-start">Start</button>
+</div>
+
+
+<!-- Canvas -->
+<div id="sea-battle" class="_block _box-insetM _light column" width = "300" height = "150">
+	<h2 style="margin-bottom: 1rem;">Игра "Морской бой"</h2>
+
+	<div class="canvas-container">
+		<canvas id="sea-battle_canvas"></canvas>
+		<canvas id="sea-battle-enemy_canvas"></canvas>
+	</div>
+	<canvas id="sea-battle-ship_canvas"></canvas>
+	<button class = "btn btn-disabled" id = "sea-battle-start" disabled>Start</button>
+</div>
+
+
+<!-- Memorization -->
+<div id="memorization" class="_block _box-insetM _light column">
+	<h2 style="margin-bottom: 1rem;">Игра "Запоминалка"</h2>
+
+	<div id="memorization_canvas" class="content" style="height: 300px;">
+		<div class="memoScreen">
+			<!-- <div class="circleOpasity">
+				<div class="emersionInside">Hello!</div>
+			</div>
+			 -->
+			<div class="circleOpasity">
+				<div class="emersionInside">Hello!</div>
+			</div>
+		</div>
+
+		<div class="memoSelect column">
+			<div class="row">
+				<button id="select_1" class="correct">1</button>
+				<button id="select_2" class="incorrect">2</button>
+			</div>
+			<div class="row">
+				<button id="select_3">3</button>
+				<button id="select_4">4</button>
+			</div>
+		</div>
+	</div>
+	
+<!-- 
+	<div class="box-arrow btn-container">
+
+		<button class = "btn" id = "memorization_arrowLeft">&larr;</button>
+		<div class="column">	
+		<button class = "btn" id = "memorization_arrowUp">&uarr;</button>
+		<button class = "btn" id = "memorization_arrowDown">&darr;</button>
+		</div>
+		<button class = "btn" id = "memorization_arrowRight">&rarr;</button>
+
+	</div> -->
+	
+	<button class = "btn" id = "memorization_start">Start</button>
+</div>
+
+
+
+<!-- Slider -->
+<div id="slider" class="_block _box-insetM _light">
+	<div class="slider_container">
+		<div class="slider_line">
+			<div class="slider-item _dark"></div>
+			<div class="slider-item _bee"></div>
+			<div class="slider-item _dark"></div>
+			<div class="slider-item _bee"></div>
+
+			<div class="slider-item _dark"></div>
+			<div class="slider-item _bee"></div>
+			<div class="slider-item _dark"></div>
+			<div class="slider-item _bee"></div>
+
+			<div class="slider-item _dark"></div>
+			<div class="slider-item _bee"></div>
+			<div class="slider-item _dark"></div>
+
+		</div>
+	</div>
+	<div class="btn-container">
+		<button id="slider-left" class="btn">Left</button>
+		<button id="slider-right" class="btn">Right</button>
+	</div>
+</div>
+
+
+</div><!-- /Maket -->
+
+
+
+<script src="/js/scroll.js"></script>
+<script src="/js/timer.js"></script>
+<script src="/js/tabs.js"></script>
+<script src="/js/stars.js"></script>
+<script src="/js/guess-the-number.js"></script>
+<script src="/js/map.js"></script>
+<!-- <script src="/js/life-game.js"></script> -->
+<script src="/js/life-game-2.js"></script>
+<!--<script src="/js/sea-battle.js"></script>-->
+<!-- <script src="/js/sea-battle-2.js"></script> -->
+<script src="/js/sea-battle-3.js"></script>
+<script src="/js/slider.js"></script>
+<script src="/js/math-brif.js"></script>
+<script src="/js/music.js"></script>
+<script src="/js/go.js"></script>
+<script src="/js/memorization.js"></script>
+<!-- <script src="/js/swipe.js"></script> -->
+
+</body>
