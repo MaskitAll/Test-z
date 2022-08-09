@@ -40,9 +40,9 @@ function handleTouchMove(evt) {
     var yDiff = yDown - yUp;
 
     if ( Math.abs(xDiff) > Math.abs(yDiff)) {
-        ( xDiff > 0 ) ? alert("Left") : alert("Right");
+        ( xDiff > 0 ) ? selectMemoAnswer(37, 'select_1') : selectMemoAnswer(39, 'select_4');
     } else {
-        ( yDiff > 0 ) ? alert("Up") : alert("Down");
+        ( yDiff > 0 ) ? selectMemoAnswer(38, 'select_2') : selectMemoAnswer(40, 'select_3');
     }
 
     /* свайп был, обнуляем координаты */
