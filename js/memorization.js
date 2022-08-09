@@ -29,7 +29,7 @@ function handleTouchStart(evt) {
 };
 
 function handleTouchMove(evt) {
-    if ( ! xDown || ! yDown ) {
+    if ( ! xDown || ! yDown || gameMode === 0 ) {
         return;
     }
 
@@ -56,6 +56,7 @@ function handleTouchMove(evt) {
 // код игры запоминалка
 var Memo= [];
 var MemoAnswer = [];
+var gameMode = 0;
 
 var memos_arrow = [37, 38, 39, 40];
 var memos_digit = [49, 50, 51, 52, 53, 54, 55, 56, 57, 58];
@@ -122,19 +123,12 @@ function replaceArrowCode(code){
 
 // отключить кнопки
 function hideButtons(){
+    gameMode = 0;
     select_1.classList.add("blocked");
     select_2.classList.add("blocked");
     select_3.classList.add("blocked");
     select_4.classList.add("blocked");
-}
-
-// включить кнопки
-function showButtons(){
-    if(select_1.classList.contains("blocked")) {select_1.classList.remove("blocked");}
-    if(select_2.classList.contains("blocked")) {select_2.classList.remove("blocked");}
-    if(select_3.classList.contains("blocked")) {select_3.classList.remove("blocked");}
-    if(select_4.classList.contains("blocked")) {select_4.classList.remove("blocked");}
-   
+    
     if(select_1.classList.contains("correct")) {select_1.classList.remove("correct");}
     if(select_2.classList.contains("correct")) {select_2.classList.remove("correct");}
     if(select_3.classList.contains("correct")) {select_3.classList.remove("correct");}
@@ -144,6 +138,15 @@ function showButtons(){
     if(select_2.classList.contains("incorrect")) {select_2.classList.remove("incorrect");}
     if(select_3.classList.contains("incorrect")) {select_3.classList.remove("incorrect");}
     if(select_4.classList.contains("incorrect")) {select_4.classList.remove("incorrect");}
+}
+
+// включить кнопки
+function showButtons(){
+    gameMode = 1;
+    if(select_1.classList.contains("blocked")) {select_1.classList.remove("blocked");}
+    if(select_2.classList.contains("blocked")) {select_2.classList.remove("blocked");}
+    if(select_3.classList.contains("blocked")) {select_3.classList.remove("blocked");}
+    if(select_4.classList.contains("blocked")) {select_4.classList.remove("blocked");}
 }
 
 // заполнить значения в кнопки
