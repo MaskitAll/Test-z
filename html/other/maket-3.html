@@ -255,7 +255,7 @@
 
 
 
-<!-- Canvas -->
+<!-- Life Game -->
 	<div id="canvas" class="_block _box-insetM _light" width = "300" height = "150">
 		<h2 style="margin-bottom: 1rem;">Игра "Жизнь"</h2>
 		<div class="checkbox-container check-born">
@@ -370,20 +370,37 @@
 				<div class="emersionInside">Hello!</div>
 			</div>
 			 -->
-			<div class="circleOpasity">
+			<!-- <div class="circleOpasity">
 				<div class="emersionInside">Hello!</div>
-			</div>
+			</div> -->
 		</div>
 
-		<div class="memoSelect column">
-			<div class="row">
-				<button id="select_1" class="correct">1</button>
-				<button id="select_2" class="incorrect">2</button>
+		<div class="memoSelect column" style="align-items:flex-start">
+			<table>
+				<tr>
+					<th><label for="memo_level">Уровень:&nbsp;</label></th>
+					<th><input type="text" name="memo_level" id="memo_level" value="3"></th>
+				</tr>
+				<!-- <tr>
+					<th><label for="memo_difficulty">Сложность:&nbsp;</label></th>
+					<th><input type="text" name="memo_difficulty" id="memo_difficulty" value="0"></th>			
+				</tr> -->
+				<tr>
+					<th><label for="memo_speed">Скорость:&nbsp;</label></th>
+					<th><input type="text" name="memo_speed" id="memo_speed" value="500" onchange="setSpeed()"></th>			
+				</tr>
+
+			</table>
+			
+		</div>
+
+		<div class="memoSelect row">
+				<button id="select_1" onclick="selectMemoAnswer(37, 'select_1')">&lArr;</button>
+			<div class="column">
+				<button id="select_2" onclick="selectMemoAnswer(38, 'select_2')">&uArr;</button>
+				<button id="select_3" onclick="selectMemoAnswer(40, 'select_3')">&dArr;</button>
 			</div>
-			<div class="row">
-				<button id="select_3">3</button>
-				<button id="select_4">4</button>
-			</div>
+				<button id="select_4" onclick="selectMemoAnswer(39, 'select_4')">&rArr;</button>
 		</div>
 	</div>
 	
@@ -399,7 +416,7 @@
 
 	</div> -->
 	
-	<button class = "btn" id = "memorization_start">Start</button>
+	<button class = "btn" id = "memorization_start" onclick="memoStart()">Start</button>
 </div>
 
 

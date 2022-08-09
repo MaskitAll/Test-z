@@ -153,13 +153,19 @@ body{
     }
 }
 
+
+:root{
+    --memo_speed: 1s;
+}
 .emersion{
     border: 2px solid #202020;
     border-radius: 20px;
     padding: 10px;
     margin: 10px;
     background-color: #ccc;
-    animation: emersion 2s linear 1;
+    animation: emersion var(--memo_speed) linear 1;
+    text-align: center;
+    opacity: 0;
 }
 
 .filterOpasity{
@@ -588,9 +594,29 @@ canvas{
 }
 
 
-
 /**********************
-        SLIDER
+    MEMORIZATION
+***********************/
+#memorization_canvas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+
+    .memoScreen{
+        width: 80%;
+        height: 150px;
+        
+    }
+
+    .memoSelect{
+
+    }
+
+}
+/**********************
+    GUESS THE NUMBER
 ***********************/
 
 #guess_the_number{

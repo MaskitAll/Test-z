@@ -100,7 +100,7 @@ function random(min, max) {
 function createInside(parent, style, innerHTML){    
     var elemDiv = document.createElement("div");
     elemDiv.classList.add(style);
-    elemDiv.textContent = innerHTML; 
+    elemDiv.innerHTML = innerHTML; 
     parent.append(elemDiv);
 }
 
